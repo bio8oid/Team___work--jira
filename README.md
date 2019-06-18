@@ -7,11 +7,9 @@ Projekt grupowy tworzony w celach szkoleniowych. Tematem jest witryna sklepu two
 |           |              |
 | 4         | 4            |
 
-DO UZUPEŁNIENIA
 
 [LINK DO AKTUALNEJ WERSJI PROJEKTU](https://kodilla-wdp-1905-03.netlify.com/)
 
-DO UZUPEŁNIENIA
 
 ## Inicjacja projektu
 
@@ -39,10 +37,10 @@ dla plików, które zostały wybrane do za-commit'owania.
 
 ## Konwencje i dobre praktyki
 
-_Do uruchamiania sliderów opartych na FLICKITY w projekcie, został dodany plik sliders.js, natomiast opcje do pożądanego zachowania własnych implementacji dodajemy do pliku app.js bez usuwania istniejących już tam ustawień do innych sekcji witryny ;)_
+Do uruchamiania sliderów opartych na FLICKITY w projekcie, został dodany plik sliders.js, natomiast opcje do pożądanego zachowania własnych implementacji dodajemy do pliku app.js bez usuwania istniejących już tam ustawień do innych sekcji witryny ;)
 
 **KODILLA moduł 22.1. Code review**
 
-Pamiętaj, że code review nie jest szukaniem winnego ani atakiem na drugą osobę. Staraj się pisać tak, jak Ty chcesz żeby pisano do Ciebie. Staraj się nie wydawać poleceń, np. "zmień to na...", tylko chociaż czasem zadać pytanie czy podać sugestię, np. "Czy nie byłoby lepiej zmienić nazwę tej zmiennej na... żeby była podobna do innych?", albo "Ja bym raczej unikał takiego zapisu, bo to może być nieczytelne dla innych. Myślę, że lepiej będzie...".
+_Pamiętaj, że code review nie jest szukaniem winnego ani atakiem na drugą osobę. Staraj się pisać tak, jak Ty chcesz żeby pisano do Ciebie. Staraj się nie wydawać poleceń, np. "zmień to na...", tylko chociaż czasem zadać pytanie czy podać sugestię, np. "Czy nie byłoby lepiej zmienić nazwę tej zmiennej na... żeby była podobna do innych?", albo "Ja bym raczej unikał takiego zapisu, bo to może być nieczytelne dla innych. Myślę, że lepiej będzie..."._
 
 Obrażanie się na uzasadniony code review, nie jest aż takie profesjonalne...podobnie jak robienie z grupowego projektu prywatnego folwarku :)
