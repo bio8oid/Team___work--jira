@@ -2,7 +2,6 @@ import flickitySlider from './sliders';
 import $ from 'jquery';
 import './bootstrap.min.js';
 import { starsAction } from '/scripts/starsAction';
-import '/scripts/range-slider';
 
 const hotDealsSlider = flickitySlider('.hot-deals-slider', {
   wrapAround: true,
