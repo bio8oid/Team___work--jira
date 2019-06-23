@@ -7,6 +7,31 @@
     <title>Furnitures shop</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
     <link rel="stylesheet" href="./sass/style.scss" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $("#slider-range").slider({
+          range: true,
+          min: 0,
+          max: 500,
+          values: [75, 300],
+          slide: function(event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+          }
+        });
+        $("#amount").val(
+          "$" +
+            $("#slider-range").slider("values", 0) +
+            " - $" +
+            $("#slider-range").slider("values", 1)
+        );
+      });
+    </script>
   </head>
 
   <body>
@@ -14,8 +39,15 @@
 
     <module href="./src/partials/products_20_section-hero.html"></module>
 
+    <module href="./src/partials/products_30_section-furniture.html"></module>
+
+    <module href="./src/partials/80_section-brands.html"></module>
+
+    <module href="./src/partials/products_85_section-newsletter.html"></module>
+
     <module href="./src/partials/90_footer.html"></module>
 
     <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>
