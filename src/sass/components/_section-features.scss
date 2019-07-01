@@ -1,0 +1,10 @@
+.section--features {
+  padding: 2rem 0;
+}
+
+@include media-breakpoint-down(lg) {
+  .feature-box-wrapper {
+    padding-bottom: 10px;
+    height: 100%;
+  }
+}

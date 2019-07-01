@@ -1,0 +1,78 @@
+.section--brands {
+  padding: 1rem 0;
+}
+
+.brand-photo {
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid $brands-border-color;
+}
+
+.brand-1 {
+  background-image: url("../images/placeholder-1.jpeg");
+}
+
+.brand-2 {
+  background-image: url("../images/placeholder-2.png");
+}
+
+.brands-panel {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid $brands-border-color;
+  border-bottom: 1px solid $brands-border-color;
+}
+
+.brands-slider {
+  padding: 0 50px;
+
+  & .carousel-cell {
+    margin: 0 10px;
+    width: 150px;
+  }
+
+  & .flickity-prev-next-button {
+    width: 30px;
+    height: 100px;
+    background: $brands-buttons-color;
+    border-radius: 0;
+
+    @media not all and (hover: none) {
+      &:hover {
+        background: $primary;
+      }
+    }
+  }
+
+  & .flickity-button-icon {
+    fill: $brands-buttons-fill;
+  }
+
+  & .flickity-prev-next-button.previous {
+    left: 0;
+  }
+
+  & .flickity-prev-next-button.next {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1096px) {
+  .brands-slider .carousel-cell {
+    width: 31%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .brands-slider {
+    & .carousel-cell {
+      width: 45%;
+    }
+
+    & .flickity-prev-next-button:hover {
+      background: $brands-buttons-color;
+    }
+  }
+}

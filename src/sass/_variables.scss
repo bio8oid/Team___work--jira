@@ -1,11 +1,96 @@
+//Colors
+//Colors
 $header-topbar-bg: #864343;
 $header-bg: #723636;
+$cart-counter: #e0e3ed;
+$phone-number: #d8d8d8;
 
+$white: #fff;
+$white-light: #f4f5f7;
+$black: #000;
 $footer-claim-bg: #2a2a2a;
 $footer-bg: #363636;
+$footer-text: #a9a9a9;
 
 $primary: #d58e32;
+$white: #fff;
 
+$text-hover: #fff;
+$post-info: rgb(103, 103, 103);
 $text-color: #2a2a2a;
+$menu-bar: rgba(1, 2, 2, 0.2);
+$old-price-color: #999;
+
+$product-box-bg: #fff;
 
 $form-border-color: #292929;
+
+$brands-border-color: #e1e1e1;
+$brands-chevron-color: #fff;
+$brands-buttons-color: #2a2a2a;
+$brands-buttons-fill: #fff;
+
+$color-animation-duration: 250ms;
+$background-color-animation-duration: 250ms;
+
+$panel-border-grey: #e2e2e2;
+$dot-bg: #e1e1e1;
+$gray-light: #666;
+
+
+$newsletter-background: #f2f2f2;
+$newsletter-text: #c6c6c6;
+
+$photo-color: #f4f5f7;
+
+$sync-icon-shadow: #c6c6c6;
+$sync-button: #f4f5f7;
+
+$colored-box-red: #fa5f66;
+$colored-box-yellow: #e9e600;
+$colored-box-blue: #0190d3;
+$colored-box-pink: #f72fe4;
+$colored-box-green: #14d400;
+
+
+//Text
+$font-base-size: 1rem; //16px
+$font-size-1: $font-base-size * 3; //~48px
+$font-size-2: $font-base-size * 1.5; //24px
+$font-size-3: $font-base-size * 1.125; // 18px
+$font-size-4: $font-base-size * 1; //16px
+$font-size-5: $font-base-size * 0.875; //14px
+$font-size-6: $font-base-size * 0.75; //12px
+$font-size-7: $font-base-size * 0.625; //10px
+$font-size-8: 13px;
+$font-size-9: 17px;
+$font-size-10: 32px;
+$font-size-11: 20px;
+$font-size-12: 52px;
+
+//Transform
+$cart-counter: translate(50%, -50%);
+
+// Line height
+
+$line-height-base: 1.5;
+$line-height-sm: 1.2;
+$line-height-lg: 1.8;
+
+//Grid
+$grid-base: 10px;
+$gutter: $grid-base * 1.5;
+
+//Circle
+$border-radius: $grid-base * 0.5;
+
+//Breakpoint
+$bp-medium: "800px";
+$bp-large: "1200px";
+$bp-desktop: "1199px";
+$bp-small: "991px";
+$bp-middle: "992px";
+$bp-small: "768px";
+$bp-very-small: "511px";
+$bp-small2: "432px";
+$bp-very-small1: "400px";

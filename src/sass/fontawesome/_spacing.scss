@@ -1,0 +1,43 @@
+.u-mb1 {
+  margin-bottom: $grid-base;
+}
+
+.u-mb2 {
+  margin-bottom: $grid-base * 2;
+}
+
+.u-mb3 {
+  margin-bottom: $grid-base;
+  @include large-up {
+    margin-bottom: $grid-base * 3;
+  }
+}
+
+.u-mb7 {
+  margin-bottom: $grid-base;
+  @include large-up {
+    margin-bottom: $grid-base * 7;
+  }
+}
+
+.u-mt3 {
+  margin-top: $grid-base * 3;
+}
+
+.u-md-25 {
+  @include large-up {
+    width: calc(100% - 280px);
+    margin: 0 auto;
+  }
+}
+
+.u-move {
+  @include large-up {
+    position: relative;
+    left: $grid-base * 9.2;
+  }
+}
+
+.u-text-lg-left {
+  left: 0;
+}

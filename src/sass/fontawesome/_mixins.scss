@@ -55,3 +55,140 @@
     width: auto;
   }
 }
+
+//Custome mixin :
+
+//for small tablet
+
+@mixin medium-small {
+  @media (max-width: #{$bp-small}) {
+    @content;
+  }
+}
+
+//for middle breakpoint'
+
+
+@mixin medium-400 {
+  @media(max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin medium-up {
+  @media(min-width: #{$bp-medium}) {
+    @content;
+  }
+}
+
+@mixin medium-high2 {
+  @media (min-width: $bp-small) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: $bp-small2) and (max-width: $bp-small) {
+    @content;
+  }
+}
+
+@mixin smartfon {
+  @media (min-width:$bp-small2 ) and (max-width: $bp-very-small ) {
+    @content;
+  }
+}
+
+//Static controll this bp
+
+@mixin smartfonS {
+  @media (min-width: 360px) and (max-width: 431px )  {
+    @content;
+  }
+}
+
+@mixin smartfonS1 {
+  @media (min-width: 200px) and (max-width: 359px )  {
+    @content;
+  }
+}
+
+
+@mixin medium-high {
+  @media (min-width: $bp-middle)  and (max-width: $bp-desktop )  {
+    @content;
+  }
+}
+
+@mixin medium-992 {
+  @media (min-width: $bp-middle) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $bp-small) and (max-width: $bp-small) {
+    @content;
+  }
+}
+
+
+
+
+
+
+
+//for large breakpoint'
+
+@mixin large-up {
+  @media(min-width: #{$bp-large}) {
+    @content;
+  }
+}
+//Grayscale
+@mixin grayscale_element($value) {
+  -webkit-filter: grayscale($value);
+  -moz-filter: grayscale($value);
+  filter: grayscale($value);
+}
+
+
+
+$breakpoints: (
+        small: 767px,
+        medium: 992px,
+        large: 1200px
+);
+
+// _mixins.scss
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+
+
+// Center items
+
+@mixin centererPos($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}

@@ -1,7 +1,11 @@
 .product-box {
-  background-color: #ffffff;
+  background-color: $product-box-bg;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
+
+  &:hover .no-hover {
+    background: $primary;
+  }
 
   .photo {
     position: relative;
@@ -29,6 +33,11 @@
     .buttons {
       display: flex;
       justify-content: space-between;
+      opacity: 0;
+    }
+
+    &:hover .buttons {
+      opacity: 1;
     }
   }
 
@@ -49,6 +58,11 @@
         color: rgb(42, 42, 42);
         @extend .far;
         @extend .fa-star;
+
+        &.active {
+          color: $primary;
+          font-weight: 900;
+        }
 
         &.full {
           @extend .fas;
@@ -78,5 +92,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .price {
+    display: flex;
+  }
+
+  .old-price {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 10px;
+    font-weight: 400;
+    color: $old-price-color;
+    text-decoration: line-through;
+    text-align: center;
   }
 }

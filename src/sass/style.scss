@@ -7,17 +7,30 @@
 @import "fontawesome/solid";
 @import "fontawesome/brands";
 @import "fontawesome/regular";
+@import "fontawesome/spacing";
 
 @import "components/header";
 @import "components/footer";
 
 @import "components/button";
 @import "components/feature-box";
+@import "components/images";
+@import "components/promotion-box";
 @import "components/panel-bar";
 @import "components/post-box";
 @import "components/product-box";
+@import "components/promote";
 
-@import "components/section--features";
+@import "components/products-slider";
+@import "components/blog-slider";
+@import "components/animation-transition";
+
+@import "components/section-hero";
+@import "components/section-features";
+@import "components/section-brands";
+@import "components/section-newsletter";
+@import "components/section-furniture";
+
 
 body {
   font-family: "Poppins", sans-serif;

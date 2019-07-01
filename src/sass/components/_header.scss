@@ -9,11 +9,12 @@ header {
 
       li {
         display: inline-block;
-        line-height: 55px;
+        line-height: $grid-base * 5.5;
 
         a {
-          color: #ffffff;
-          font-size: 13px;
+          color: $white;
+          font-size: $font-size-8;
+          @extend .animation-transition;
 
           &:hover {
             color: $primary;
@@ -22,21 +23,21 @@ header {
         }
       }
     }
+  }
 
-    .text-left ul li {
-      margin-right: 1.5rem;
+  .dropdown-menu__item {
+    margin-right: 1.5rem;
 
-      i {
-        margin-left: 5px;
-      }
+    i {
+      margin-left: 5px;
     }
+  }
 
-    .text-right ul li {
-      margin-left: 1.5rem;
+  .user-menu__item {
+    margin-left: 1.5rem;
 
-      i {
-        margin-right: 5px;
-      }
+    i {
+      margin-right: 5px;
     }
   }
 
@@ -44,89 +45,82 @@ header {
     background-color: $header-bg;
 
     .container > .row {
-      height: 145px;
+      height: $grid-base * 14.5;
     }
+  }
 
-    .phone-number {
-      p {
-        margin: 0;
-        font-size: 17px;
-        line-height: 42px;
-        color: rgb(216, 216, 216);
-        font-weight: 500;
+  .phone-number {
+    margin: 0;
+    font-size: 17px;
+    line-height: 42px;
+    color: $phone-number;
+    font-weight: 500;
+
+    i {
+      font-size: 32px;
+      color: $primary;
+      vertical-align: middle;
+      margin-top: -3px;
+      margin-right: 0.8rem;
+    }
+  }
+
+  .cart {
+    .cart-box {
+      display: inline-block;
+      position: relative;
+      color: $white;
+      @extend .animation-transition;
+
+      @media screen and (max-width: 600px) {
+        left: -22px;
+      }
+
+      .cart-icon {
+        background-color: $primary;
+        width: $grid-base * 5.5;
+        height: $grid-base * 5;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $font-size-11;
 
         i {
-          font-size: 32px;
-          color: $primary;
-          vertical-align: middle;
-          margin-top: -3px;
-          margin-right: 0.8rem;
+          margin-right: 5px;
         }
       }
-    }
 
-    .cart {
-      .cart-box {
-        display: inline-block;
-        position: relative;
-        color: #ffffff;
+      .cart-counter {
+        width: 28px;
+        height: 27px;
+        border-radius: 14px;
+        background-color: $header-bg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: $cart-counter;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: $cart-counter;
+      }
 
-        @media screen and (max-width: 600px) {
-          left: -22px;
-        }
-
+      &:hover {
         .cart-icon {
-          background-color: $primary;
-          width: 55px;
-          height: 50px;
-          border-radius: 3px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 20px;
-
-          i {
-            margin-right: 5px;
-          }
-        }
-
-        .cart-counter {
-          width: 28px;
-          height: 27px;
-          border-radius: 14px;
-          background-color: $header-bg;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 14px;
-          color: rgb(224, 227, 237);
-          position: absolute;
-          top: 50%;
-          right: 0;
-          transform: translate(50%, -50%);
-
-          &__value {
-            text-align: left;
-            margin-left: 10px;
-            width: 28px;
-          }
-        }
-
-        &:hover {
-          .cart-icon {
-            background-color: lighten($primary, 10%);
-          }
+          background-color: lighten($primary, 10%);
         }
       }
     }
   }
 
   .menu-bar {
-    box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
-    background-color: #ffffff;
+    box-shadow: 2px 3.464px 6px $menu-bar;
+    background-color: $white;
 
     .container > .row {
-      height: 84px;
+      height: $grid-base * 8.4;
     }
 
     .menu {
@@ -151,14 +145,15 @@ header {
             text-decoration: none;
             display: flex;
             align-items: center;
-            border-top: 4px solid #ffffff;
+            border-top: 4px solid $white;
             font-weight: 500;
             letter-spacing: 1px;
+            @extend .animation-transition;
 
             &:hover,
             &.active {
               background-color: $primary;
-              color: #ffffff;
+              color: $white;
               border-color: $primary;
             }
 
@@ -173,7 +168,7 @@ header {
     .search-form {
       border: 1px solid $form-border-color;
       display: inline-flex;
-      height: 45px;
+      height: $grid-base * 4.5;
       color: $text-color;
 
       .category {
@@ -185,13 +180,13 @@ header {
         i:first-child {
           color: $primary;
           position: absolute;
-          left: 10px;
+          left: $grid-base;
           z-index: 0;
         }
 
         i:last-child {
           position: absolute;
-          right: 10px;
+          right: $grid-base;
           z-index: 0;
         }
 
@@ -200,8 +195,8 @@ header {
           border: 0;
           background-color: transparent;
           outline: none;
-          padding: 5px 30px 5px 35px;
-          font-size: 14px;
+          padding: 5px $grid-base * 3 5px $grid-base * 3.5;
+          font-size: $font-size-5;
           position: relative;
           z-index: 1;
         }
@@ -214,8 +209,8 @@ header {
 
         input {
           border: 0;
-          padding-left: 10px;
-          font-size: 14px;
+          padding-left: $grid-base;
+          font-size: $font-size-5;
           outline: none;
 
           &::placeholder {
@@ -229,6 +224,56 @@ header {
           outline: none;
         }
       }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .company-claim {
+    .row {
+      position: relative;
+    }
+
+    .phone-number {
+      font-size: $font-size-5;
+      text-align: right;
+
+      &-wrapper {
+        position: absolute;
+        right: $grid-base * 1.5;
+        bottom: 0;
+        padding: 0;
+      }
+    }
+
+    .cart {
+      position: relative;
+      top: -$grid-base * 1.5;
+      right: $grid-base * 1.5;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  header .dropdown-menu__item {
+    margin-right: 1rem;
+  }
+
+  .text-right {
+    padding-left: 0;
+  }
+
+  .user-menu__list {
+    white-space: nowrap;
+  }
+
+  .user-menu__item {
+    width: $grid-base * 1.3;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &:first-of-type {
+      margin-left: 0;
     }
   }
 }

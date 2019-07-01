@@ -1,0 +1,67 @@
+.section--hero {
+  & .hero-header {
+    text-transform: uppercase;
+    text-align: center;
+    height: 200px;
+    padding-top: 65px;
+    background: $header-bg;
+
+    & .hero-top-text {
+      font-size: 60px;
+      line-height: 50px;
+      color: $white;
+      letter-spacing: -2px;
+      font-weight: 200;
+    }
+
+    & .hero-header-bold {
+      font-weight: 600;
+    }
+
+    & .hero-discount-text {
+      letter-spacing: 13px;
+      font-size: 22px;
+      color: $white;
+      line-height: 0;
+      padding-left: 15px;
+    }
+
+    & .hero-discount-color {
+      color: $primary;
+    }
+  }
+
+  & .hero-list {
+    height: 50px;
+    background: $header-topbar-bg;
+    display: flex;
+    text-transform: capitalize;
+    padding: 14px 25px;
+    font-size: 16px;
+
+    & .chevron {
+      padding: 0 20px;
+    }
+
+    & a:last-child {
+      color: $primary;
+    }
+
+    & * {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .hero-header {
+      padding-top: 25px;
+      padding-bottom: 0;
+
+      & .hero-discount-text {
+        letter-spacing: -1px;
+        padding: 0;
+      }
+    }
+  }
+}
