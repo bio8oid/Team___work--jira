@@ -11941,39 +11941,16 @@ parcelRequire = (function(e, r, t, n) {
       },
       {}
     ],
-    TfxB: [
-      function(require, module, exports) {
-        $(function() {
-          $('#slider-range').slider({
-            range: !0,
-            min: 0,
-            max: 500,
-            values: [75, 300],
-            slide: function(e, a) {
-              $('#amount').val('$' + a.values[0] + ' - $' + a.values[1]);
-            }
-          }),
-            $('#amount').val(
-              '$' +
-                $('#slider-range').slider('values', 0) +
-                ' - $' +
-                $('#slider-range').slider('values', 1)
-            );
-        });
-      },
-      {}
-    ],
     'd+pd': [
       function(require, module, exports) {
         'use strict';
-        var e = a(require('./sliders')),
-          r = a(require('jquery'));
+        var e = r(require('./sliders')),
+          a = r(require('jquery'));
         require('./bootstrap.min.js');
         var t = require('/scripts/starsAction');
-        function a(e) {
+        function r(e) {
           return e && e.__esModule ? e : { default: e };
         }
-        require('/scripts/range-slider');
         for (
           var n = (0, e.default)('.hot-deals-slider', {
               wrapAround: !0,
@@ -11988,19 +11965,19 @@ parcelRequire = (function(e, r, t, n) {
                 return n.select(e);
               });
             },
-            d = 0;
-          d < s.length;
-          d++
+            l = 0;
+          l < s.length;
+          l++
         )
-          i(d);
-        function u(e) {
-          for (var r = 0; r < e.length; r++)
-            e[r].classList.contains('active') && e[r].classList.remove('active');
+          i(l);
+        function d(e) {
+          for (var a = 0; a < e.length; a++)
+            e[a].classList.contains('active') && e[a].classList.remove('active');
         }
         n.on('change', function(e) {
-          u(s), s[e].classList.add('active');
+          d(s), s[e].classList.add('active');
         });
-        var l = (0, e.default)('.distinguish-slider', {
+        var u = (0, e.default)('.distinguish-slider', {
             prevNextButtons: !1,
             pageDots: !1,
             wrapAround: !0
@@ -12009,10 +11986,10 @@ parcelRequire = (function(e, r, t, n) {
           c = o[1],
           f = o[0];
         c.addEventListener('click', function() {
-          return l.previous(!0);
+          return u.previous(!0);
         }),
           f.addEventListener('click', function() {
-            return l.next(!0);
+            return u.next(!0);
           }),
           (0, e.default)('.brands-slider', {
             wrapAround: !0,
@@ -12023,41 +12000,57 @@ parcelRequire = (function(e, r, t, n) {
           }),
           (0, e.default)('.blog-slider', { wrapAround: !0 }),
           (0, t.starsAction)();
-        var p = (0, e.default)('#bed', { wrapAround: !0 }),
-          b = (0, e.default)('#chair', { wrapAround: !0 }),
-          v = (0, e.default)('#sofa', { wrapAround: !0 }),
-          g = (0, e.default)('#table', { wrapAround: !0 }),
+        var v = (0, e.default)('#bed', { wrapAround: !0 }),
+          g = (0, e.default)('#chair', { wrapAround: !0 }),
+          b = (0, e.default)('#sofa', { wrapAround: !0 }),
+          p = (0, e.default)('#table', { wrapAround: !0 }),
           A = (0, e.default)('#dining', { wrapAround: !0 });
-        (0, r.default)(document).ready(function() {
-          (0, r.default)('.nav-tabs a').click(function() {
-            (0, r.default)(this).tab('show');
+        (0, a.default)(document).ready(function() {
+          (0, a.default)('.nav-tabs a').click(function() {
+            (0, a.default)(this).tab('show');
           }),
-            (0, r.default)('.nav-tabs a').on('shown.bs.tab', function(e) {
+            (0, a.default)('.nav-tabs a').on('shown.bs.tab', function(e) {
               switch (e.target.dataset.slider) {
                 case 'bedSlider':
-                  p.resize();
-                  break;
-                case 'chairSlider':
-                  b.resize();
-                  break;
-                case 'sofaSlider':
                   v.resize();
                   break;
-                case 'tableSlider':
+                case 'chairSlider':
                   g.resize();
+                  break;
+                case 'sofaSlider':
+                  b.resize();
+                  break;
+                case 'tableSlider':
+                  p.resize();
                   break;
                 case 'diningSlider':
                   A.resize();
               }
             });
-        });
+        }),
+          (0, a.default)(function() {
+            (0, a.default)('#slider-range').slider({
+              range: !0,
+              min: 0,
+              max: 500,
+              values: [75, 300],
+              slide: function(e, t) {
+                (0, a.default)('#amount').val('$' + t.values[0] + ' - $' + t.values[1]);
+              }
+            }),
+              (0, a.default)('#amount').val(
+                '$' +
+                  (0, a.default)('#slider-range').slider('values', 0) +
+                  ' - $' +
+                  (0, a.default)('#slider-range').slider('values', 1)
+              );
+          });
       },
       {
         './sliders': 'jI2W',
         jquery: 'juYr',
         './bootstrap.min.js': 'QanN',
-        '/scripts/starsAction': 'lAPF',
-        '/scripts/range-slider': 'TfxB'
+        '/scripts/starsAction': 'lAPF'
       }
     ]
   },
@@ -12065,4 +12058,4 @@ parcelRequire = (function(e, r, t, n) {
   ['d+pd'],
   null
 );
-//# sourceMappingURL=/app.6c96d0b5.js.map
+//# sourceMappingURL=/app.2db82941.js.map

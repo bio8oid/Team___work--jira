@@ -2,7 +2,6 @@ import flickitySlider from './sliders';
 import $ from 'jquery';
 import './bootstrap.min.js';
 import { starsAction } from '/scripts/starsAction';
-import '/scripts/range-slider';
 
 const hotDealsSlider = flickitySlider('.hot-deals-slider', {
   wrapAround: true,
@@ -88,4 +87,22 @@ $(document).ready(function () {
         diningSlider.resize();
     }
   });
+});
+
+$(function () {
+  $('#slider-range').slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [75, 300],
+    slide: function (event, ui) {
+      $('#amount').val('$' + ui.values[0] + ' - $' + ui.values[1]);
+    }
+  });
+  $('#amount').val(
+    '$' +
+      $('#slider-range').slider('values', 0) +
+      ' - $' +
+      $('#slider-range').slider('values', 1)
+  );
 });
