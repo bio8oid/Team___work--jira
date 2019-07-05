@@ -6,9 +6,7 @@ Projekt grupowy tworzony w celach szkoleniowych. Tematem jest witryna sklepu two
 | --------- | ------------ |
 | 4         | 4            |
 
-
-[LINK DO AKTUALNEJ WERSJI PROJEKTU](https://kodilla-wdp-1905-03.netlify.com/)
-
+[LINK DO AKTUALNEJ WERSJI PROJEKTU](https://bio8oid.github.io/jira/)
 
 ## Inicjacja projektu
 

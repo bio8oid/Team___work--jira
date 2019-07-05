@@ -8,7 +8,7 @@
   @media not all and (hover: none) {
     &:hover {
       .counter {
-        display: block;
+        display: flex;
       }
 
       .hot-deals__button {
@@ -38,7 +38,6 @@
     right: 5%;
     line-height: 1;
   }
-
   &__dot {
     background-color: $text-hover;
     display: inline-block;
@@ -59,9 +58,11 @@
   }
 
   &__photo {
-    max-height: 350px;
+    height: 25vh;
     max-width: 100%;
-    object-fit: cover;
+    background-image: url("https://secure.img1-fg.wfcdn.com/im/68010059/resize-h505-w505%5Ecompr-r85/3034/30347531/Rogersville+Armchair.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
   &__product {
@@ -71,7 +72,11 @@
   &__button {
     position: absolute;
     top: 30%;
-    left: 35%;
+    width: 120px;
+    left: 50%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transform: translateX(-50%);
     display: none;
   }
 }
@@ -81,13 +86,15 @@
   height: 100%;
 
   &__image {
-    object-fit: fill;
+    min-height: 45vh;
     max-width: 100%;
-    max-height: 500px;
+    background-image: url("https://pl.sofacompany.com/media/catalog/product/cache/d13c0f82f8ebfb04d96519ed59bc94be/0/7/074803042117_Front_1.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
   &__nav {
-    height: 50px;
+    height: 40px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -96,7 +103,7 @@
   &__buttons {
     display: inline-block;
     width: 50%;
-    height: 100%;
+    height: 40px;
     border: 0;
     float: right;
     background-color: $text-color;
@@ -139,11 +146,14 @@
   &__button {
     position: absolute;
     text-transform: uppercase;
-    bottom: -20px;
-    width: 30%;
-    left: 35%;
-    height: 40px;
+    bottom: -25px;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
     border: 0;
+    border-radius: 3px;
+    line-height: 18px;
     background-color: $text-hover;
     color: $text-color;
     font-weight: 700;
@@ -152,12 +162,17 @@
 
 .counter {
   position: absolute;
-  bottom: 150px;
+  bottom: 160px;
   height: 60px;
   width: 100%;
-  margin-left: 2%;
+  display: flex;
+  justify-content: center;
+  opacity: 0.9;
   display: none;
-  opacity: 0.85;
+
+  &__spacer {
+    display: block;
+  }
 
   &__value {
     text-align: center;
@@ -167,9 +182,9 @@
     height: 70px;
     border-radius: 50%;
     background-color: $text-color;
-    float: left;
-    margin-left: 10px;
-    padding: 14px;
+    margin: 2px;
+    padding: 10px;
+    line-height: 26px;
     text-transform: uppercase;
   }
 }
@@ -187,5 +202,47 @@
 .distinguish-slider {
   & .carousel-cell {
     width: 100%;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .overlay__header {
+    margin-top: 35px;
+    line-height: 22px;
+  }
+
+  .overlay__header--bold {
+    margin-top: 15px;
+  }
+
+  .overlay__subheader {
+    line-height: 20px;
+  }
+
+  .counter {
+    bottom: 165px;
+
+    &__value {
+      line-height: 18px;
+      font-size: 14px;
+      width: 50px;
+      height: 50px;
+      margin: 1px;
+      padding: 8px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .hot-deals {
+    display: none;
+  }
+
+  .overlay__header {
+    margin-top: 10%;
+  }
+
+  .overlay__header--bold {
+    margin-top: 15px;
   }
 }
