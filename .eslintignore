@@ -1,2 +1,5 @@
 bootstrap.min.js
 docs/
+dist/
+build/
+src/

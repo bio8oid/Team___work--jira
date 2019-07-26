@@ -11637,23 +11637,44 @@ header .menu-bar {
   background-color: #fff;
 }
 header .menu-bar .container > .row {
-  height: 84px;
+  height: auto;
+  flex-wrap: wrap-reverse;
 }
 header .menu-bar .menu {
   display: flex;
   align-self: stretch;
+  flex-wrap: wrap;
+  width: 50%;
 }
+
+.menu,
+.bar {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 header .menu-bar .menu ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
 }
 header .menu-bar .menu ul li {
+  width: 100%;
   list-style: none;
   display: flex;
   align-items: stretch;
 }
 header .menu-bar .menu ul li a {
+  max-width: 100%;
   color: #2a2a2a;
   text-transform: uppercase;
   font-size: 12px;
@@ -11661,6 +11682,7 @@ header .menu-bar .menu ul li a {
   text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-top: 4px solid #fff;
   font-weight: 500;
   letter-spacing: 1px;
@@ -11679,6 +11701,8 @@ header .menu-bar .search-form {
   display: inline-flex;
   height: 45px;
   color: #2a2a2a;
+  margin: 10px;
+  margin-left: 0;
 }
 header .menu-bar .search-form .category {
   border-right: 1px solid #292929;
@@ -11711,6 +11735,7 @@ header .menu-bar .search-form .search-field {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: center;
 }
 header .menu-bar .search-form .search-field input {
   border: 0;
@@ -11726,6 +11751,20 @@ header .menu-bar .search-form .search-field button {
   background-color: transparent;
   outline: none;
 }
+
+@media (max-width: 1200px) {
+  header .menu-bar .menu ul li,
+  header .menu-bar .menu ul li a {
+    min-width: 130px;
+  }
+  .menu {
+    width: 100%;
+  }
+  header .menu-bar .menu {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767.98px) {
   .company-claim .row {
     position: relative;
@@ -11747,6 +11786,10 @@ header .menu-bar .search-form .search-field button {
   }
 }
 @media (max-width: 575.98px) {
+  header .menu-bar .menu ul li {
+    flex: 1;
+  }
+
   header .dropdown-menu__item {
     margin-right: 1rem;
   }

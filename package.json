@@ -8,7 +8,7 @@
     "watch": "parcel src/index.html --open --no-autoinstall --port 8080",
     "watchproducts": "parcel src/products.html --open --no-autoinstall --port 8080",
     "prebuild": "npm run clean",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --no-cache --no-minify --public-url ./ ",
     "clean": "rimraf dist .cache",
     "code-quality": "npm run format && npm run lint",
     "format": "prettier --write \"src/**/*.{js,html,scss}\"",
@@ -45,14 +45,14 @@
     "sass": "^1.15.3"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.6",
     "core-js": "^2.6.8",
     "electron-to-chromium": "^1.3.136",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.14.6",
-    "psl": "^1.1.31",
     "flickity": "^2.2.0",
-    "lib": "^4.0.2"
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1",
+    "lib": "^4.0.2",
+    "popper.js": "^1.14.6",
+    "psl": "^1.1.31"
   }
 }
