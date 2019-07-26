@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furnitures shop</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="style.2ebc5db1.css" />
+    <link rel="stylesheet" href="jquery-ui.22e1fc71.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto text-left">
+              <ul>
+                <li class="dropdown-menu__item">
+                  <a href="#">USD <i class="fas fa-caret-down"></i></a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="#">English <i class="fas fa-caret-down"></i></a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="#">Help <i class="fas fa-caret-down"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col text-right">
+              <ul class="user-menu__list">
+                <li class="user-menu__item">
+                  <a href="#"><i class="fas fa-user"></i> Login</a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#"><i class="fas fa-lock"></i> Register</a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#"><i class="fas fa-bars"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="company-claim">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col text-left phone-number-wrapper">
+              <p class="phone-number">
+                <i class="fas fa-mobile-alt"></i> 2345 - 3560 - 222
+              </p>
+            </div>
+            <div class="col text-center">
+              <a href="#"><img src="logo.371e9660.png"/></a>
+            </div>
+            <div class="col text-right cart">
+              <a href="#" class="cart-box">
+                <div class="cart-icon"><i class="fas fa-shopping-basket"></i></div>
+                <div class="cart-counter">
+                  <span class="cart-counter__value">0</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-bar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <form action="" class="search-form">
+                <div class="category">
+                  <i class="fas fa-list-ul"></i>
+                  <select name="" id="">
+                    <option value="">Select a category</option>
+                  </select>
+                  <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="search-field">
+                  <input placeholder="Search products..." type="text" />
+                  <button><i class="fa fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="col-auto menu">
+              <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Furniture</a></li>
+                <li><a href="#">Chair</a></li>
+                <li><a href="#">Table</a></li>
+                <li><a href="#">Sofa</a></li>
+                <li><a href="#">Bedroom</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section--hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="hero-header">
+              <p class="hero-top-text">
+                bedroom <span class="hero-header-bold">furniture</span>
+              </p>
+              <p class="hero-discount-text">
+                always <span class="hero-discount-color"> 25 %</span> off or more
+              </p>
+            </div>
+            <div>
+              <div class="hero-list">
+                <a href="#">home</a> <a class="chevron" href="#"> > </a>
+                <a href="#">furniture</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--furniture">
+      <div class="container">
+        <div class="products-and-filters-section-wrapper">
+          <div class="product-boxes-wrapper">
+            <div class="panel-bar">
+              <div class="row no-gutters align-items-end">
+                <div class="col-sm-12 col-md-auto heading">
+                  <div><h3>Furniture</h3></div>
+                  <div class="select-price-wrap">
+                    <p class="select-price-title">Sort by</p>
+                    <select class="form-control-sm select-price-form">
+                      <option>Price lowest first</option>
+                      <option>Price highest first</option>
+                      <option>Price any first</option>
+                    </select>
+                  </div>
+                  <div class="select-number-wrap">
+                    <p class="select-number-title">Show</p>
+                    <select class="form-control-sm select-number-form">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div class="outlines grid-list">
+                    <a href="#" class="btn-outline"><i class="fas fa-th-large"></i></a>
+                    <a href="#" class="btn-outline"><i class="fa fa-list"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="old-price">$ 35.00</div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="old-price">$ 35.00</div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="old-price">$ 35.00</div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="old-price">$ 35.00</div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 margin">
+                <div class="product-box">
+                  <div class="photo">
+                    <div class="sale">sale</div>
+                    <div class="buttons">
+                      <a href="#" class="btn-main-small">Quick View</a>
+                      <a href="#" class="btn-main-small"
+                        ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h5>Aenean Ru Bristique</h5>
+                    <div class="stars">
+                      <a href="#" class="full"></a> <a href="#" class="full"></a>
+                      <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="actions">
+                    <div class="outlines">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <a href="#" class="btn-outline"
+                        ><i class="fas fa-exchange-alt"></i
+                      ></a>
+                    </div>
+                    <div class="price">
+                      <div class="btn-main-small no-hover">$ 30.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary sync-icon">
+                <i class="fas fa-sync-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="sidebar-filters">
+            <div class="panel-bar filters">
+              <div class="row no-gutters align-items-end">
+                <div class="heading"><h3>filter by categories</h3></div>
+              </div>
+            </div>
+            <div class="filter-paragraphs">
+              <div class="categories-paragraph">
+                <div class="chevron">></div>
+                <div class="filter-link"><a href="#"></a>Furniture</div>
+                <div class="filter-number">3</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="chevron">></div>
+                <div class="filter-link"><a href="#"></a>Sofa</div>
+                <div class="filter-number">4</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="chevron">></div>
+                <div class="filter-link"><a href="#"></a>Chair</div>
+                <div class="filter-number">5</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="chevron">></div>
+                <div class="filter-link"><a href="#"></a>Table</div>
+                <div class="filter-number">5</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="chevron">></div>
+                <div class="filter-link"><a href="#"></a>Bedroom</div>
+                <div class="filter-number">5</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="chevron">></div>
+                <div class="filter-link"><a href="#"></a>Furniture</div>
+                <div class="filter-number">5</div>
+              </div>
+            </div>
+            <div class="panel-bar filters">
+              <div class="row no-gutters align-items-end">
+                <div class="heading"><h3>filter by price</h3></div>
+              </div>
+            </div>
+            <div class="filter-paragraphs">
+              <div id="slider-range"></div>
+              <div class="btn-main-small filter-button">Filter</div>
+              <div class="range-display">
+                <p><input type="text" id="amount" /></p>
+              </div>
+            </div>
+            <div class="panel-bar filters">
+              <div class="row no-gutters align-items-end">
+                <div class="heading"><h3>filter by color</h3></div>
+              </div>
+            </div>
+            <div class="filter-paragraphs">
+              <div class="categories-paragraph">
+                <div class="colored-box red"></div>
+                <div class="filter-link"><a href="#"></a>Red</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="colored-box black"></div>
+                <div class="filter-link"><a href="#"></a>Black</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="colored-box yellow"></div>
+                <div class="filter-link"><a href="#"></a>Yellow</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="colored-box blue"></div>
+                <div class="filter-link"><a href="#"></a>Blue</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="colored-box pink"></div>
+                <div class="filter-link"><a href="#"></a>Pink</div>
+              </div>
+              <div class="categories-paragraph">
+                <div class="colored-box green"></div>
+                <div class="filter-link"><a href="#"></a>Green</div>
+              </div>
+            </div>
+            <div class="panel-bar filters">
+              <div class="row no-gutters align-items-end">
+                <div class="heading"><h3>filter by size</h3></div>
+              </div>
+            </div>
+            <div class="filter-paragraphs">
+              <div class="categories-paragraph size">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customCheck1"
+                  />
+                  <label class="custom-control-label" for="customCheck1">S</label>
+                </div>
+                <div class="filter-number">3</div>
+              </div>
+              <div class="categories-paragraph size">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customCheck2"
+                  />
+                  <label class="custom-control-label" for="customCheck2">M</label>
+                </div>
+                <div class="filter-number">4</div>
+              </div>
+              <div class="categories-paragraph size">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customCheck3"
+                  />
+                  <label class="custom-control-label" for="customCheck3">L</label>
+                </div>
+                <div class="filter-number">5</div>
+              </div>
+              <div class="categories-paragraph size">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customCheck4"
+                  />
+                  <label class="custom-control-label" for="customCheck4">XL</label>
+                </div>
+                <div class="filter-number">5</div>
+              </div>
+              <div class="categories-paragraph size">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customCheck5"
+                  />
+                  <label class="custom-control-label" for="customCheck5">XXL</label>
+                </div>
+                <div class="filter-number">5</div>
+              </div>
+            </div>
+            <div class="panel-bar filters">
+              <div class="row no-gutters align-items-end">
+                <div class="heading"><h3>filter by size</h3></div>
+              </div>
+            </div>
+            <div class="filter-paragraphs">
+              <div class="tags-wrap">
+                <div class="tag"><i class="fa fa-tag"></i>Table</div>
+                <div class="tag"><i class="fa fa-tag"></i>Chair</div>
+                <div class="tag"><i class="fa fa-tag"></i>Hand Bag</div>
+                <div class="tag"><i class="fa fa-tag"></i>Woman</div>
+                <div class="tag"><i class="fa fa-tag"></i>Fashion</div>
+                <div class="tag"><i class="fa fa-tag"></i>Bikes</div>
+              </div>
+            </div>
+            <div class="featured-products">
+              <div class="featured-heading">featured products</div>
+              <div class="featured-wrap">
+                <div class="featured-image"></div>
+                <div class="featured-description">
+                  <div class="product-box">
+                    <div class="content">
+                      <h5>Office Chair</h5>
+                      <h6>$ 350.00</h6>
+                      <div class="stars">
+                        <a href="#" class="full"></a> <a href="#" class="full"></a>
+                        <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                      </div>
+                      <a href="#" class="btn-main-small">add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-wrap">
+                <div class="featured-image"></div>
+                <div class="featured-description">
+                  <div class="product-box">
+                    <div class="content">
+                      <h5>Office Chair</h5>
+                      <h6>$ 350.00</h6>
+                      <div class="stars">
+                        <a href="#" class="full"></a> <a href="#" class="full"></a>
+                        <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                      </div>
+                      <a href="#" class="btn-main-small">add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-wrap">
+                <div class="featured-image"></div>
+                <div class="featured-description">
+                  <div class="product-box">
+                    <div class="content">
+                      <h5>Office Chair</h5>
+                      <h6>$ 350.00</h6>
+                      <div class="stars">
+                        <a href="#" class="full"></a> <a href="#" class="full"></a>
+                        <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                      </div>
+                      <a href="#" class="btn-main-small">add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--brands">
+      <div class="container">
+        <div class="brands-panel">
+          <div class="carousel brands-slider">
+            <div class="carousel-cell"><div class="brand-photo brand-1"></div></div>
+            <div class="carousel-cell"><div class="brand-photo brand-2"></div></div>
+            <div class="carousel-cell"><div class="brand-photo brand-1"></div></div>
+            <div class="carousel-cell"><div class="brand-photo brand-2"></div></div>
+            <div class="carousel-cell"><div class="brand-photo brand-1"></div></div>
+            <div class="carousel-cell"><div class="brand-photo brand-2"></div></div>
+            <div class="carousel-cell"><div class="brand-photo brand-1"></div></div>
+            <div class="carousel-cell"><div class="brand-photo brand-2"></div></div>
+            <div class="carousel-cell"><div class="brand-photo brand-1"></div></div>
+            <div class="carousel-cell"><div class="brand-photo brand-2"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--newsletter">
+      <div class="newsletter-wrapper">
+        <div class="newsletter-header"><h3>newsletter :</h3></div>
+        <i class="fa fa-envelope envelope"></i>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Enter your email address"
+        />
+        <div class="send-button">
+          <a href="#"><i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="menu-wrapper">
+                <h6>Information</h6>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Conditions</a></li>
+                  <li><a href="#">Online support</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="menu-wrapper">
+                <h6>My account</h6>
+                <ul>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">My cart</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="#">Checkout</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="menu-wrapper">
+                <h6>Information</h6>
+                <ul>
+                  <li><a href="#">Specials</a></li>
+                  <li><a href="#">New products</a></li>
+                  <li><a href="#">Best Sellers</a></li>
+                  <li><a href="#">Out Stores</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="menu-wrapper">
+                <h6>Orders</h6>
+                <ul>
+                  <li><a href="#">Payment options</a></li>
+                  <li><a href="#">Shipping and delivery</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Shipping</a></li>
+                </ul>
+              </div>
+              <img
+                class="payment-image"
+                src="cards.554c11fb.png"
+                alt="Available payment methods: Visa, MasterCard, Discover, American Express and PayPal"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 placeholder"></div>
+            <div class="col-6 col-md-4 copyright text-center">
+              <p>©Copyright 2016 Bazar | All Rights Reserved</p>
+            </div>
+            <div class="col-6 col-md-4 socialmedia text-right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bootstrap.min.816cb281.js"></script>
+    <script src="app.7b0d2e75.js"></script>
+  </body>
+</html>

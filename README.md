@@ -6,7 +6,7 @@ Projekt grupowy tworzony w celach szkoleniowych. Tematem jest witryna sklepu two
 | --------- | ------------ |
 | 4         | 4            |
 
-[LINK DO AKTUALNEJ WERSJI PROJEKTU](https://bio8oid.github.io/jira/)
+[LINK DO AKTUALNEJ WERSJI PROJEKTU](https://jira-team.netlify.com/)
 
 ## Inicjacja projektu
 
