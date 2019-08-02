@@ -6,6 +6,9 @@ import { starsAction } from './starsAction';
 if (window.location.href.indexOf('products') > -1) {
   starsAction();
 
+  document.getElementById('home').classList.remove('active');
+  document.getElementById('furniture').classList.add('active');
+
   flickitySlider('.brands-slider', {
     wrapAround: true,
     pageDots: false,
