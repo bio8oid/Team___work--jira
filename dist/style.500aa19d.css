@@ -13979,12 +13979,12 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
-  src: url("fa-solid-900.5ba446d2.eot");
-  src: url("fa-solid-900.5ba446d2.eot?#iefix") format("embedded-opentype"),
-    url("fa-solid-900.71f9d02d.woff2") format("woff2"),
-    url("fa-solid-900.76784b6b.woff") format("woff"),
-    url("fa-solid-900.42e0f0e4.ttf") format("truetype"),
-    url("fa-solid-900.60296fe5.svg#fontawesome") format("svg");
+  src: url("/fa-solid-900.db6e410a.eot");
+  src: url("/fa-solid-900.db6e410a.eot?#iefix") format("embedded-opentype"),
+    url("/fa-solid-900.fd95c363.woff2") format("woff2"),
+    url("/fa-solid-900.6f4c886d.woff") format("woff"),
+    url("/fa-solid-900.c1ea8e73.ttf") format("truetype"),
+    url("/fa-solid-900.0d33a13c.svg#fontawesome") format("svg");
 }
 .fa,
 .fas,
@@ -14001,12 +14001,12 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
-  src: url("fa-brands-400.b9b3addf.eot");
-  src: url("fa-brands-400.b9b3addf.eot?#iefix") format("embedded-opentype"),
-    url("fa-brands-400.2d777408.woff2") format("woff2"),
-    url("fa-brands-400.c91a2b26.woff") format("woff"),
-    url("fa-brands-400.021ca20e.ttf") format("truetype"),
-    url("fa-brands-400.eab030e3.svg#fontawesome") format("svg");
+  src: url("/fa-brands-400.532d6390.eot");
+  src: url("/fa-brands-400.532d6390.eot?#iefix") format("embedded-opentype"),
+    url("/fa-brands-400.e626b96a.woff2") format("woff2"),
+    url("/fa-brands-400.a5d5c97f.woff") format("woff"),
+    url("/fa-brands-400.5d034085.ttf") format("truetype"),
+    url("/fa-brands-400.996a6134.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -14020,12 +14020,12 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 400;
-  src: url("fa-regular-400.15c2fb34.eot");
-  src: url("fa-regular-400.15c2fb34.eot?#iefix") format("embedded-opentype"),
-    url("fa-regular-400.3e45f3ff.woff2") format("woff2"),
-    url("fa-regular-400.fbaac3f7.woff") format("woff"),
-    url("fa-regular-400.1e63ac5a.ttf") format("truetype"),
-    url("fa-regular-400.e8d46d0c.svg#fontawesome") format("svg");
+  src: url("/fa-regular-400.56f52d12.eot");
+  src: url("/fa-regular-400.56f52d12.eot?#iefix") format("embedded-opentype"),
+    url("/fa-regular-400.dd666da8.woff2") format("woff2"),
+    url("/fa-regular-400.3e6bd546.woff") format("woff"),
+    url("/fa-regular-400.04f9b7c3.ttf") format("truetype"),
+    url("/fa-regular-400.54fa8c33.svg#fontawesome") format("svg");
 }
 .far,
 .product-box .content .stars a {
@@ -14294,6 +14294,12 @@ header .menu-bar .search-form .search-field button {
     justify-content: center;
     margin: 20px;
   }
+  .menu-bar .search-for {
+    height: 200px;
+  }
+  .menu-bar .category {
+    margin: 20px;
+  }
   .menu-bar .container > .row {
     width: 100%;
   }
@@ -14332,6 +14338,10 @@ header .menu-bar .search-form .search-field button {
 
   .menu-bar {
     margin: 0 auto;
+  }
+  .menu-bar .menu {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
   .menu-bar ul {
     flex-wrap: wrap;
@@ -14569,7 +14579,7 @@ footer .bottom-bar .socialmedia ul li a:hover {
   position: relative;
 }
 .promotion-box__photo {
-  background-image: url("furniture-promo.ffcd306b.jpg");
+  background-image: url("/furniture-promo.177c1276.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14639,14 +14649,14 @@ footer .bottom-bar .socialmedia ul li a:hover {
   padding-bottom: 1px;
 }
 .promotion-box__images--img1 {
-  background-image: url("armchair.84e7a5a2.png");
+  background-image: url("/armchair.c778e5bf.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 144px;
 }
 .promotion-box__images--img2 {
-  background-image: url("chairoffice.4d048468.png");
+  background-image: url("/chairoffice.09d3f468.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -14851,7 +14861,7 @@ footer .bottom-bar .socialmedia ul li a:hover {
   }
 }
 .post-box {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .post-box .cover {
   padding: 70% 25px 0 25px;
@@ -15009,7 +15019,7 @@ footer .bottom-bar .socialmedia ul li a:hover {
 }
 
 .section-promote {
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .hot-deals {
@@ -15228,10 +15238,13 @@ footer .bottom-bar .socialmedia ul li a:hover {
     margin-top: 15px;
   }
 }
-.products-slider .flickity-button:hover {
+.section--products {
+  padding: 2rem 0;
+}
+.section--products .products-slider .flickity-button:hover {
   color: #d58e32;
 }
-.products-slider .flickity-page-dots {
+.section--products .products-slider .flickity-page-dots {
   position: absolute;
   width: auto;
   height: 13px;
@@ -15243,7 +15256,7 @@ footer .bottom-bar .socialmedia ul li a:hover {
   padding-left: 1rem;
   background-color: #fff;
 }
-.products-slider .flickity-page-dots .dot {
+.section--products .products-slider .flickity-page-dots .dot {
   display: inline-block;
   margin: 0 8px;
   opacity: 1;
@@ -15253,23 +15266,26 @@ footer .bottom-bar .socialmedia ul li a:hover {
   border-radius: 6px;
   background-color: #e1e1e1;
 }
-.products-slider .flickity-page-dots .dot.active,
-.products-slider .flickity-page-dots .dot:hover {
+.section--products .products-slider .flickity-page-dots .dot.active,
+.section--products .products-slider .flickity-page-dots .dot:hover {
   background-color: #d58e32;
 }
-.products-slider .flickity-page-dots .is-selected {
+.section--products .products-slider .flickity-page-dots .is-selected {
   background-color: #d58e32;
 }
-
 @media (max-width: 991.98px) {
-  .products-slider .flickity-page-dots {
+  .section--products .products-slider .flickity-page-dots {
     display: none;
   }
 }
-.blog-slider .flickity-button:hover {
+
+.section--blog-posts {
+  margin-bottom: 2rem;
+}
+.section--blog-posts .blog-slider .flickity-button:hover {
   color: #d58e32;
 }
-.blog-slider .flickity-page-dots {
+.section--blog-posts .blog-slider .flickity-page-dots {
   position: absolute;
   width: auto;
   height: 13px;
@@ -15281,7 +15297,7 @@ footer .bottom-bar .socialmedia ul li a:hover {
   padding-left: 1rem;
   background-color: #fff;
 }
-.blog-slider .flickity-page-dots .dot {
+.section--blog-posts .blog-slider .flickity-page-dots .dot {
   display: inline-block;
   margin: 0 8px;
   opacity: 1;
@@ -15291,11 +15307,11 @@ footer .bottom-bar .socialmedia ul li a:hover {
   border-radius: 6px;
   background-color: #e1e1e1;
 }
-.blog-slider .flickity-page-dots .dot.active,
-.blog-slider .flickity-page-dots .dot:hover {
+.section--blog-posts .blog-slider .flickity-page-dots .dot.active,
+.section--blog-posts .blog-slider .flickity-page-dots .dot:hover {
   background-color: #d58e32;
 }
-.blog-slider .flickity-page-dots .is-selected {
+.section--blog-posts .blog-slider .flickity-page-dots .is-selected {
   background-color: #d58e32;
 }
 
@@ -15309,13 +15325,13 @@ footer .bottom-bar .socialmedia ul li a,
 .btn-main-small,
 .btn-outline,
 .panel-bar .menu ul li a,
-.products-slider .flickity-page-dots .dot,
-.blog-slider .flickity-page-dots .dot {
+.section--products .products-slider .flickity-page-dots .dot,
+.section--blog-posts .blog-slider .flickity-page-dots .dot {
   transition: color 250ms, background-color 250ms;
 }
 
 .section--features {
-  padding: 2rem 0;
+  padding: 6rem 0;
 }
 
 @media (max-width: 1199.98px) {
@@ -15731,7 +15747,6 @@ footer .bottom-bar .socialmedia ul li a,
 }
 
 .section--brands {
-  padding: 1rem 0;
   margin-bottom: 60px;
 }
 
@@ -15744,11 +15759,11 @@ footer .bottom-bar .socialmedia ul li a,
 }
 
 .brand-1 {
-  background-image: url("placeholder-1.5d9ce7fe.jpeg");
+  background-image: url("/placeholder-1.00d9fd6f.jpeg");
 }
 
 .brand-2 {
-  background-image: url("placeholder-2.0ffe275e.png");
+  background-image: url("/placeholder-2.8d301e36.png");
 }
 
 .brands-panel {
@@ -15874,4 +15889,4 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/*# sourceMappingURL=style.4f795ba7.css.map */
+/*# sourceMappingURL=/style.500aa19d.css.map */

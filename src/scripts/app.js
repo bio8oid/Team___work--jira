@@ -3,6 +3,10 @@ import $ from 'jquery';
 import './bootstrap.min.js';
 import { starsAction } from './starsAction';
 
+var jquery = require('jquery');
+window.$ = window.jQuery = jquery; // notice the definition of global variables here
+require('./jquery-ui.js');
+
 if (window.location.href.indexOf('products') > -1) {
   starsAction();
 

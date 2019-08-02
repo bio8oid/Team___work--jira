@@ -255,6 +255,14 @@ header {
       margin: 20px;
     }
 
+    .search-for {
+      height: 200px;
+    }
+
+    .category {
+      margin: 20px;
+    }
+
     .container > .row {
       width: 100%;
     }
@@ -304,6 +312,11 @@ header {
 
   .menu-bar {
     margin: 0 auto;
+
+    .menu {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
 
     ul {
       flex-wrap: wrap;

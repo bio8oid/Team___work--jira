@@ -1,40 +1,44 @@
-.blog-slider {
-  .flickity-button {
-    &:hover {
-      color: $primary;
-    }
-  }
+.section--blog-posts {
+  margin-bottom: 2rem;
 
-  .flickity-page-dots {
-    position: absolute;
-    width: auto;
-    height: 13px;
-    top: -39px;
-    right: 0;
-    margin: 0;
-    list-style: none;
-    line-height: 1;
-    padding-left: 1rem;
-    background-color: $white;
-
-    .dot {
-      display: inline-block;
-      margin: 0 8px;
-      opacity: 1;
-      cursor: pointer;
-      width: 13px;
-      height: 13px;
-      border-radius: 6px;
-      background-color: $dot-bg;
-      @extend .animation-transition;
-
-      &.active,
+  .blog-slider {
+    .flickity-button {
       &:hover {
-        background-color: $primary;
+        color: $primary;
       }
     }
-    .is-selected {
-      background-color: $primary;
+
+    .flickity-page-dots {
+      position: absolute;
+      width: auto;
+      height: 13px;
+      top: -39px;
+      right: 0;
+      margin: 0;
+      list-style: none;
+      line-height: 1;
+      padding-left: 1rem;
+      background-color: $white;
+
+      .dot {
+        display: inline-block;
+        margin: 0 8px;
+        opacity: 1;
+        cursor: pointer;
+        width: 13px;
+        height: 13px;
+        border-radius: 6px;
+        background-color: $dot-bg;
+        @extend .animation-transition;
+
+        &.active,
+        &:hover {
+          background-color: $primary;
+        }
+      }
+      .is-selected {
+        background-color: $primary;
+      }
     }
   }
 }
