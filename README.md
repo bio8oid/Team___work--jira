@@ -1,6 +1,6 @@
 # WDP Projekt Zespołowy
 
-Projekt grupowy tworzony w celach szkoleniowych. Tematem jest witryna sklepu tworzona na podstawie szablonów PSD załączonych do dokumentacji, oraz nauka pracy zespołowej.
+Projekt grupowy prowadzony w celach szkoleniowych. Tematem jest witryna sklepu tworzona na podstawie szablonów PSD załączonych do dokumentacji, oraz nauka pracy zespołowej.
 
 | KURSANTÓW | PROWADZĄCYCH |
 | --------- | ------------ |
