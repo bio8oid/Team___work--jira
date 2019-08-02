@@ -122,7 +122,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
   return newRequire;
 })(
   {
-    '../node_modules/ev-emitter/ev-emitter.js': [
+    BQvw: [
       function(require, module, exports) {
         var define;
         var global = arguments[3];
@@ -238,7 +238,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
       },
       {}
     ],
-    '../node_modules/get-size/get-size.js': [
+    SpQD: [
       function(require, module, exports) {
         var define;
         /*!
@@ -456,7 +456,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
       },
       {}
     ],
-    '../node_modules/desandro-matches-selector/matches-selector.js': [
+    PZ9L: [
       function(require, module, exports) {
         var define;
         /**
@@ -513,7 +513,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
       },
       {}
     ],
-    '../node_modules/fizzy-ui-utils/utils.js': [
+    PmK6: [
       function(require, module, exports) {
         var define;
         /**
@@ -757,12 +757,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return utils;
         });
       },
-      {
-        'desandro-matches-selector':
-          '../node_modules/desandro-matches-selector/matches-selector.js'
-      }
+      { 'desandro-matches-selector': 'PZ9L' }
     ],
-    '../node_modules/flickity/js/cell.js': [
+    TMI2: [
       function(require, module, exports) {
         var define;
         // Flickity.Cell
@@ -860,9 +857,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return Cell;
         });
       },
-      { 'get-size': '../node_modules/get-size/get-size.js' }
+      { 'get-size': 'SpQD' }
     ],
-    '../node_modules/flickity/js/slide.js': [
+    JiRT: [
       function(require, module, exports) {
         var define;
         // slide
@@ -941,7 +938,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
       },
       {}
     ],
-    '../node_modules/flickity/js/animate.js': [
+    F3K3: [
       function(require, module, exports) {
         var define;
         // animate
@@ -1142,9 +1139,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return proto;
         });
       },
-      { 'fizzy-ui-utils': '../node_modules/fizzy-ui-utils/utils.js' }
+      { 'fizzy-ui-utils': 'PmK6' }
     ],
-    '../node_modules/flickity/js/flickity.js': [
+    oca4: [
       function(require, module, exports) {
         var define;
         // Flickity main
@@ -2101,15 +2098,15 @@ parcelRequire = (function(modules, cache, entry, globalName) {
         });
       },
       {
-        'ev-emitter': '../node_modules/ev-emitter/ev-emitter.js',
-        'get-size': '../node_modules/get-size/get-size.js',
-        'fizzy-ui-utils': '../node_modules/fizzy-ui-utils/utils.js',
-        './cell': '../node_modules/flickity/js/cell.js',
-        './slide': '../node_modules/flickity/js/slide.js',
-        './animate': '../node_modules/flickity/js/animate.js'
+        'ev-emitter': 'BQvw',
+        'get-size': 'SpQD',
+        'fizzy-ui-utils': 'PmK6',
+        './cell': 'TMI2',
+        './slide': 'JiRT',
+        './animate': 'F3K3'
       }
     ],
-    '../node_modules/unipointer/unipointer.js': [
+    tBFV: [
       function(require, module, exports) {
         var define;
         /*!
@@ -2404,9 +2401,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return Unipointer;
         });
       },
-      { 'ev-emitter': '../node_modules/ev-emitter/ev-emitter.js' }
+      { 'ev-emitter': 'BQvw' }
     ],
-    '../node_modules/unidragger/unidragger.js': [
+    '1LI/': [
       function(require, module, exports) {
         var define;
         /*!
@@ -2683,9 +2680,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return Unidragger;
         });
       },
-      { unipointer: '../node_modules/unipointer/unipointer.js' }
+      { unipointer: 'tBFV' }
     ],
-    '../node_modules/flickity/js/drag.js': [
+    Wgpt: [
       function(require, module, exports) {
         var define;
         // drag
@@ -3099,13 +3096,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return Flickity;
         });
       },
-      {
-        './flickity': '../node_modules/flickity/js/flickity.js',
-        unidragger: '../node_modules/unidragger/unidragger.js',
-        'fizzy-ui-utils': '../node_modules/fizzy-ui-utils/utils.js'
-      }
+      { './flickity': 'oca4', unidragger: '1LI/', 'fizzy-ui-utils': 'PmK6' }
     ],
-    '../node_modules/flickity/js/prev-next-button.js': [
+    nlfg: [
       function(require, module, exports) {
         var define;
         // prev/next buttons
@@ -3333,13 +3326,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return Flickity;
         });
       },
-      {
-        './flickity': '../node_modules/flickity/js/flickity.js',
-        unipointer: '../node_modules/unipointer/unipointer.js',
-        'fizzy-ui-utils': '../node_modules/fizzy-ui-utils/utils.js'
-      }
+      { './flickity': 'oca4', unipointer: 'tBFV', 'fizzy-ui-utils': 'PmK6' }
     ],
-    '../node_modules/flickity/js/page-dots.js': [
+    DzsU: [
       function(require, module, exports) {
         var define;
         // page dots
@@ -3522,13 +3511,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return Flickity;
         });
       },
-      {
-        './flickity': '../node_modules/flickity/js/flickity.js',
-        unipointer: '../node_modules/unipointer/unipointer.js',
-        'fizzy-ui-utils': '../node_modules/fizzy-ui-utils/utils.js'
-      }
+      { './flickity': 'oca4', unipointer: 'tBFV', 'fizzy-ui-utils': 'PmK6' }
     ],
-    '../node_modules/flickity/js/player.js': [
+    '7aB7': [
       function(require, module, exports) {
         var define;
         // player & autoPlay
@@ -3716,13 +3701,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return Flickity;
         });
       },
-      {
-        'ev-emitter': '../node_modules/ev-emitter/ev-emitter.js',
-        'fizzy-ui-utils': '../node_modules/fizzy-ui-utils/utils.js',
-        './flickity': '../node_modules/flickity/js/flickity.js'
-      }
+      { 'ev-emitter': 'BQvw', 'fizzy-ui-utils': 'PmK6', './flickity': 'oca4' }
     ],
-    '../node_modules/flickity/js/add-remove-cell.js': [
+    NTdN: [
       function(require, module, exports) {
         var define;
         // add, remove cell
@@ -3877,12 +3858,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return Flickity;
         });
       },
-      {
-        './flickity': '../node_modules/flickity/js/flickity.js',
-        'fizzy-ui-utils': '../node_modules/fizzy-ui-utils/utils.js'
-      }
+      { './flickity': 'oca4', 'fizzy-ui-utils': 'PmK6' }
     ],
-    '../node_modules/flickity/js/lazyload.js': [
+    JR3A: [
       function(require, module, exports) {
         var define;
         // lazyload
@@ -4013,12 +3991,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return Flickity;
         });
       },
-      {
-        './flickity': '../node_modules/flickity/js/flickity.js',
-        'fizzy-ui-utils': '../node_modules/fizzy-ui-utils/utils.js'
-      }
+      { './flickity': 'oca4', 'fizzy-ui-utils': 'PmK6' }
     ],
-    '../node_modules/flickity/js/index.js': [
+    QSGe: [
       function(require, module, exports) {
         var define;
         /*!
@@ -4064,16 +4039,16 @@ parcelRequire = (function(modules, cache, entry, globalName) {
         });
       },
       {
-        './flickity': '../node_modules/flickity/js/flickity.js',
-        './drag': '../node_modules/flickity/js/drag.js',
-        './prev-next-button': '../node_modules/flickity/js/prev-next-button.js',
-        './page-dots': '../node_modules/flickity/js/page-dots.js',
-        './player': '../node_modules/flickity/js/player.js',
-        './add-remove-cell': '../node_modules/flickity/js/add-remove-cell.js',
-        './lazyload': '../node_modules/flickity/js/lazyload.js'
+        './flickity': 'oca4',
+        './drag': 'Wgpt',
+        './prev-next-button': 'nlfg',
+        './page-dots': 'DzsU',
+        './player': '7aB7',
+        './add-remove-cell': 'NTdN',
+        './lazyload': 'JR3A'
       }
     ],
-    'scripts/sliders.js': [
+    jI2W: [
       function(require, module, exports) {
         'use strict';
 
@@ -4095,9 +4070,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
         var _default = flickitySlider;
         exports.default = _default;
       },
-      { flickity: '../node_modules/flickity/js/index.js' }
+      { flickity: 'QSGe' }
     ],
-    '../node_modules/process/browser.js': [
+    pBGv: [
       function(require, module, exports) {
         // shim for using process in browser
         var process = (module.exports = {}); // cached from whatever global is present so that test runners that stub it
@@ -4312,7 +4287,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
       },
       {}
     ],
-    '../node_modules/jquery/dist/jquery.js': [
+    juYr: [
       function(require, module, exports) {
         var global = arguments[3];
         var process = require('process');
@@ -15282,9 +15257,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           return jQuery;
         });
       },
-      { process: '../node_modules/process/browser.js' }
+      { process: 'pBGv' }
     ],
-    '../node_modules/popper.js/dist/esm/popper.js': [
+    'lo/u': [
       function(require, module, exports) {
         var global = arguments[3];
         ('use strict');
@@ -18109,7 +18084,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
       },
       {}
     ],
-    'scripts/bootstrap.min.js': [
+    QanN: [
       function(require, module, exports) {
         var define;
         function _typeof(obj) {
@@ -21104,12 +21079,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
             });
         });
       },
-      {
-        jquery: '../node_modules/jquery/dist/jquery.js',
-        'popper.js': '../node_modules/popper.js/dist/esm/popper.js'
-      }
+      { jquery: 'juYr', 'popper.js': 'lo/u' }
     ],
-    'scripts/starsAction.js': [
+    lAPF: [
       function(require, module, exports) {
         'use strict';
 
@@ -21239,7 +21211,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
       },
       {}
     ],
-    'scripts/jquery-ui.js': [
+    '+PWR': [
       function(require, module, exports) {
         var define;
         function _typeof(obj) {
@@ -25392,7 +25364,6 @@ parcelRequire = (function(modules, cache, entry, globalName) {
               );
             };
           }
-
           /*!
            * jQuery UI Keycode 1.12.1
            * http://jqueryui.com
@@ -28676,9 +28647,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
             return 0;
           }
           /* Date picker manager.
-     Use the singleton instance of this class, $.datepicker, to interact with the date picker.
-     Settings for (groups of) date pickers are maintained in an instance object,
-     allowing multiple different settings on the same page. */
+   Use the singleton instance of this class, $.datepicker, to interact with the date picker.
+   Settings for (groups of) date pickers are maintained in an instance object,
+   allowing multiple different settings on the same page. */
 
           function Datepicker() {
             this._curInst = null; // The current instance in use
@@ -31686,9 +31657,9 @@ parcelRequire = (function(modules, cache, entry, globalName) {
             return target;
           }
           /* Invoke the datepicker functionality.
-     @param  options  string - a command, optionally followed by additional parameters or
-  					Object - settings for attaching new datepicker functionality
-     @return  jQuery object */
+   @param  options  string - a command, optionally followed by additional parameters or
+  			Object - settings for attaching new datepicker functionality
+   @return  jQuery object */
 
           $.fn.datepicker = function(options) {
             /* Verify an empty collection wasn't passed - Fixes #6976 */
@@ -35759,7 +35730,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
             };
           })());
           /*
-  	This manager tracks offsets of draggables and droppables
+  This manager tracks offsets of draggables and droppables
   */
 
           $.ui.ddmanager = {
@@ -41618,7 +41589,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
       },
       {}
     ],
-    'scripts/app.js': [
+    'd+pd': [
       function(require, module, exports) {
         'use strict';
 
@@ -41749,237 +41720,16 @@ parcelRequire = (function(modules, cache, entry, globalName) {
         }
       },
       {
-        './sliders': 'scripts/sliders.js',
-        jquery: '../node_modules/jquery/dist/jquery.js',
-        './bootstrap.min.js': 'scripts/bootstrap.min.js',
-        './starsAction': 'scripts/starsAction.js',
-        './jquery-ui.js': 'scripts/jquery-ui.js'
+        './sliders': 'jI2W',
+        jquery: 'juYr',
+        './bootstrap.min.js': 'QanN',
+        './starsAction': 'lAPF',
+        './jquery-ui.js': '+PWR'
       }
-    ],
-    '../node_modules/parcel-bundler/src/builtins/hmr-runtime.js': [
-      function(require, module, exports) {
-        var global = arguments[3];
-        var OVERLAY_ID = '__parcel__error__overlay__';
-        var OldModule = module.bundle.Module;
-
-        function Module(moduleName) {
-          OldModule.call(this, moduleName);
-          this.hot = {
-            data: module.bundle.hotData,
-            _acceptCallbacks: [],
-            _disposeCallbacks: [],
-            accept: function(fn) {
-              this._acceptCallbacks.push(fn || function() {});
-            },
-            dispose: function(fn) {
-              this._disposeCallbacks.push(fn);
-            }
-          };
-          module.bundle.hotData = null;
-        }
-
-        module.bundle.Module = Module;
-        var checkedAssets, assetsToAccept;
-        var parent = module.bundle.parent;
-
-        if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-          var hostname = '' || location.hostname;
-          var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-          var ws = new WebSocket(protocol + '://' + hostname + ':' + '60445' + '/');
-
-          ws.onmessage = function(event) {
-            checkedAssets = {};
-            assetsToAccept = [];
-            var data = JSON.parse(event.data);
-
-            if (data.type === 'update') {
-              var handled = false;
-              data.assets.forEach(function(asset) {
-                if (!asset.isNew) {
-                  var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-
-                  if (didAccept) {
-                    handled = true;
-                  }
-                }
-              }); // Enable HMR for CSS by default.
-
-              handled =
-                handled ||
-                data.assets.every(function(asset) {
-                  return asset.type === 'css' && asset.generated.js;
-                });
-
-              if (handled) {
-                console.clear();
-                data.assets.forEach(function(asset) {
-                  hmrApply(global.parcelRequire, asset);
-                });
-                assetsToAccept.forEach(function(v) {
-                  hmrAcceptRun(v[0], v[1]);
-                });
-              } else {
-                window.location.reload();
-              }
-            }
-
-            if (data.type === 'reload') {
-              ws.close();
-
-              ws.onclose = function() {
-                location.reload();
-              };
-            }
-
-            if (data.type === 'error-resolved') {
-              console.log('[parcel] ✨ Error resolved');
-              removeErrorOverlay();
-            }
-
-            if (data.type === 'error') {
-              console.error(
-                '[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack
-              );
-              removeErrorOverlay();
-              var overlay = createErrorOverlay(data);
-              document.body.appendChild(overlay);
-            }
-          };
-        }
-
-        function removeErrorOverlay() {
-          var overlay = document.getElementById(OVERLAY_ID);
-
-          if (overlay) {
-            overlay.remove();
-          }
-        }
-
-        function createErrorOverlay(data) {
-          var overlay = document.createElement('div');
-          overlay.id = OVERLAY_ID; // html encode message and stack trace
-
-          var message = document.createElement('div');
-          var stackTrace = document.createElement('pre');
-          message.innerText = data.error.message;
-          stackTrace.innerText = data.error.stack;
-          overlay.innerHTML =
-            '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' +
-            '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' +
-            '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' +
-            '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' +
-            message.innerHTML +
-            '</div>' +
-            '<pre>' +
-            stackTrace.innerHTML +
-            '</pre>' +
-            '</div>';
-          return overlay;
-        }
-
-        function getParents(bundle, id) {
-          var modules = bundle.modules;
-
-          if (!modules) {
-            return [];
-          }
-
-          var parents = [];
-          var k, d, dep;
-
-          for (k in modules) {
-            for (d in modules[k][1]) {
-              dep = modules[k][1][d];
-
-              if (dep === id || (Array.isArray(dep) && dep[dep.length - 1] === id)) {
-                parents.push(k);
-              }
-            }
-          }
-
-          if (bundle.parent) {
-            parents = parents.concat(getParents(bundle.parent, id));
-          }
-
-          return parents;
-        }
-
-        function hmrApply(bundle, asset) {
-          var modules = bundle.modules;
-
-          if (!modules) {
-            return;
-          }
-
-          if (modules[asset.id] || !bundle.parent) {
-            var fn = new Function('require', 'module', 'exports', asset.generated.js);
-            asset.isNew = !modules[asset.id];
-            modules[asset.id] = [fn, asset.deps];
-          } else if (bundle.parent) {
-            hmrApply(bundle.parent, asset);
-          }
-        }
-
-        function hmrAcceptCheck(bundle, id) {
-          var modules = bundle.modules;
-
-          if (!modules) {
-            return;
-          }
-
-          if (!modules[id] && bundle.parent) {
-            return hmrAcceptCheck(bundle.parent, id);
-          }
-
-          if (checkedAssets[id]) {
-            return;
-          }
-
-          checkedAssets[id] = true;
-          var cached = bundle.cache[id];
-          assetsToAccept.push([bundle, id]);
-
-          if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-            return true;
-          }
-
-          return getParents(global.parcelRequire, id).some(function(id) {
-            return hmrAcceptCheck(global.parcelRequire, id);
-          });
-        }
-
-        function hmrAcceptRun(bundle, id) {
-          var cached = bundle.cache[id];
-          bundle.hotData = {};
-
-          if (cached) {
-            cached.hot.data = bundle.hotData;
-          }
-
-          if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-            cached.hot._disposeCallbacks.forEach(function(cb) {
-              cb(bundle.hotData);
-            });
-          }
-
-          delete bundle.cache[id];
-          bundle(id);
-          cached = bundle.cache[id];
-
-          if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-            cached.hot._acceptCallbacks.forEach(function(cb) {
-              cb();
-            });
-
-            return true;
-          }
-        }
-      },
-      {}
     ]
   },
   {},
-  ['../node_modules/parcel-bundler/src/builtins/hmr-runtime.js', 'scripts/app.js'],
+  ['d+pd'],
   null
 );
-//# sourceMappingURL=/app.c09d0a7b.js.map
+//# sourceMappingURL=app.4795c285.js.map
