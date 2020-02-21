@@ -1,37 +1,23 @@
-# WDP Projekt Zespołowy
+## Team project
 
-Projekt grupowy prowadzony w celach szkoleniowych. Tematem jest witryna sklepu tworzona na podstawie szablonów PSD załączonych do dokumentacji, oraz nauka pracy zespołowej.
+Storefront made according to attached case studies to practice team work in agile Kanban based environment.
 
-| KURSANTÓW | PROWADZĄCYCH |
-| --------- | ------------ |
-| 4         | 4            |
+4 Team members.
 
-[LINK DO AKTUALNEJ WERSJI PROJEKTU](https://jira-team.netlify.com/)
+[Result of accomplished tasks](https://jira-team.netlify.com/)
 
-## Inicjacja projektu
+## Project init
 
-Po sklonowaniu projektu, zainstaluj wymagane paczki komendą `npm install`.
+After clone use: `npm install`.
 
-Teraz możesz zacząć pracę, korzystając z przygotowanych zadania `npm run watch`.
-
-Wszystkie potrzebne do pracy pliki źródłowe znajdują się w folderze `src/`.
+Start watch: `npm run watch`.
 
 ## NPM Scripts
 
-Dostępne są 3 główne skrypty przyspieszające pracę:
-
-- `build`: na bazie plików z folderu `src` buduje project w folderze `dist`
-- `watch`: odpala `browser-sync`, obserwuje zmiany w folderze `src` i przebudowuje projekt
-- `code-quality`: skrypt dokonuje automatycznego formatowania plików w folderze `src/`
-  zgodnie z przyjętą konwencją formatowania kodu i sprawdza błędy w JS.
+- `build`: basing on `src` files prepare production in `dist`
+- `watch`: starts `browser-sync` and watches `src` files
+- `code-quality`: formats and lints `src/` files
 
 ## Git Hooks
 
-Projekt korzysta z Git Hooks - możliwości uruchamiania skryptów w reakcji na wybrane zdarzenia programu Git.
-
-Za każdym razem gdy wykonasz komendę `git commit` zostanie uruchomiony skrypt `code-quality`
-dla plików, które zostały wybrane do za-commit'owania.
-
-## Konwencje i dobre praktyki
-
-Do uruchamiania sliderów opartych na FLICKITY w projekcie, został dodany plik sliders.js, natomiast opcje do pożądanego zachowania własnych implementacji dodajemy do pliku app.js bez usuwania istniejących już tam ustawień do innych sekcji witryny ;)
+Runs `code-quality` with every `git commit`
